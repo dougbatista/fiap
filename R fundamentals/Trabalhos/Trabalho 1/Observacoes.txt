@@ -1,0 +1,7 @@
+1 - Caso o arquivo "Fundamentos-R.R" for aberto e não apresentar código nenhum, será necessário mudar o encoding
+para "UTF-8".
+
+No R-studio, vá em:
+-  File
+	- Reopen with encoding
+		- Selecionar o encode "UTF-8". 
