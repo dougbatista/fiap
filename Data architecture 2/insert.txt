@@ -1,0 +1,20 @@
+db.test.insertOne ({
+    "title": "Mais um dia na fiap",
+    "desciption": "O dia a dia de um estudante",
+    "reactions": 4,
+    "autor": {
+        "autorName": "Douglas B Santos",
+        "autorId": ObjectId()
+    },
+    "comments": [
+        {
+            "autor": {
+                "autorName": "Samuel",
+                "autorId": ObjectId()
+            },
+            "comment": "Muito legal!",
+            "commentDate": new Date()
+        }
+    ],
+    "tags": ["MBA", "FIAP", "STUDENT"]
+});
