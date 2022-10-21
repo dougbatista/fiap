@@ -30,3 +30,13 @@ def report(y_test, predicted):
 
 def _confusion_matrix(y_test, predicted):
     print(confusion_matrix(y_test, predicted))
+
+def append_to_binary_results(y_hat, threshold):
+    results = []
+    for i in range(len(y_hat)):
+        if y_hat[i] >= threshold:
+            results.append(1)
+        else:
+            results.append(0)
+    
+    return results
