@@ -12,6 +12,15 @@ def plot_lost_history(history):
     plt.ylabel('Loss / Accuracy')
     plt.legend()
     plt.show()
+
+def plot_lost_only(history):
+    plt.plot(history.epoch, history.history["loss"], 'g', label='Training loss')
+    plt.plot(history.epoch, history.history["val_loss"], 'r', label='Validation loss')
+    plt.title('Training loss')
+    plt.xlabel('Epochs')
+    plt.ylabel('Loss')
+    plt.legend()
+    plt.show()
     
 def plot_roc_curve(y_test, predicted):
     fp, tp, _ = roc_curve(y_test, predicted)
